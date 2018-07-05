@@ -28,3 +28,11 @@ li:hover {
 .active {
     background-color:#111;
 }
+
+#hideButton {
+    visibility: hidden;
+}
+
+#message {
+    visibility: hidden;
+}
