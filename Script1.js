@@ -34,6 +34,7 @@ var viewBal = function () {
 };
 var gainCredit = function () {
     credits++
+    viewBal();
     /*tempData.open("w");
     tempData.writeln(credits++);
     tempData.close();*/
