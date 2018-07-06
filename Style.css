@@ -22,7 +22,7 @@ li {
     border-style: solid;
     border-width: 1px;
     border-color: #282828;
-    box-shadow: 7px 7px 45px rgb(0, 0, 0);
+    box-shadow: 1px 2px 5px rgb(0, 0, 0);
     transition-duration: 0.2s;
 }
 li:hover {
@@ -71,10 +71,56 @@ li:hover {
     margin: 4px 2px;
     transition-duration: 0.2s;
     cursor: pointer;
+    box-shadow: 0px 1px 5px rgb(32, 32, 32);
+    border-radius:2px;
 }
 .button:hover {
     background-color: #8a8a8a;
 }
+
 .pObunga {
-    color:white
+    color:white;
+    transition-duration: 0.2s;
+}
+.pObunga:hover {
+    color:white;
+}
+button:focus {
+    outline:0;
+}
+.buttonClick {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px rgb(32, 32, 32);
+    border-radius:2px;
+}
+.buttonClick:active {
+    background-color: #252525;
+    transform: translateY(4px);
+    background-color: rgb(180, 180, 180);
+    color: black;
+    border: 2px solid #e7e7e7;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    box-shadow: 0px 1px 5px rgb(32, 32, 32);
+    border-radius:2px;
 }
