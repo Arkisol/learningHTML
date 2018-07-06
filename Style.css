@@ -1,8 +1,9 @@
 .buttonsDiv {
 	text-align: center;
-	width: 50%;
+	width: 100%;
 	font-size:75px;
-    padding-top: 75px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 body {
 	background: url("images/paper.jpg") no-repeat center center fixed;
@@ -21,6 +22,8 @@ li {
     border-style: solid;
     border-width: 1px;
     border-color: #282828;
+    box-shadow: 7px 7px 45px rgb(0, 0, 0);
+    transition-duration: 0.2s;
 }
 li:hover {
     background-color:#222;
@@ -35,4 +38,43 @@ li:hover {
 
 #message {
     visibility: hidden;
+}
+.aboutP {
+    font-size: 30px;
+    font-family: Lato, Helvetica, sans-serif;
+    padding-top: 5%;
+    padding-left: 2%
+
+}
+.parallax { 
+    background-image: url("images/paper.jpg");
+    height: 100%; 
+    width: 1900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*tried out a parallax effect on scrolling here, index.html needs to be longer for it to actually work and need to find suitable image (rn its just normal bg)*/
+
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #8a8a8a;
+}
+.pObunga {
+    color:white
 }
