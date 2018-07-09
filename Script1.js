@@ -1,15 +1,12 @@
 // JavaScript source code
-//var tempData = new 
-//to try and store the var "credits" onto a .txt that can be accessed and chanaged
-
-/*var getCredits = function () {
-    tempData.open("r");
-    var readCredits = //read and return the last line in file
-    tempData.close();
-    return readCredits;
-};*/
+//var fs = require ("fs");
 
 var credits = 0; //getCredits();
+
+//when arriving at new page, update var value with server value
+/*fs.readFile ("./tempUserData.txt", function (err, buf) {
+    credits = buf;
+});*/
 
 var showMessage = function () {
     document.getElementById("message").style.visibility = "visible";
@@ -35,7 +32,11 @@ var viewBal = function () {
 var gainCredit = function () {
     credits++
     viewBal();
-    /*tempData.open("w");
-    tempData.writeln(credits++);
-    tempData.close();*/
+    //update server value when credit changes
+    /*fs.writeFile ("./tempUserData.txt", credits, function (err, credits) {
+        if (err) throw err;
+    });*/
 };
+
+
+
